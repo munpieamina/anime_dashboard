@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Koi — Anime Dashboard</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script type="module" src="main.js"></script>
+  </head>
+
+  <body>
+    <div class="bg" aria-hidden="true">
+      <i></i><i></i><i></i>
+    </div>
+
+    <header class="top">
+      <a class="logo" href="./" aria-label="Koi">
+        <span class="kanji" lang="ja">鯉</span>
+        <span>Koi</span>
+      </a>
+
+      <div class="tools">
+        <button id="demoBtn" class="btn ghost" type="button">Загрузить демо-данные</button>
+        <button id="resetBtn" class="btn ghost" type="button">Удалить все данные</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="search"></div>
+
+      <section aria-labelledby="dashboard-title">
+        <div class="dhead">
+          <h1 id="dashboard-title">Dashboard</h1>
+          <div id="addMenu" class="addmenu"></div>
+        </div>
+
+        <div id="grid" class="grid"></div>
+      </section>
+    </main>
+
+    <div id="toasts" role="status" aria-live="polite"></div>
+    <dialog id="modal"></dialog>
+  </body>
+</html>
